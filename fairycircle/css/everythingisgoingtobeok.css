@@ -1,18 +1,18 @@
 @font-face {
                 font-family: basiic;
-                src: url('/fonts/basiic.ttf');
+                src: url('../fonts/basiic.ttf');
             }
             @font-face {
                 font-family: Helena;
-                src: url('/fonts/HelenaDiary.otf');
+                src: url('../fonts/HelenaDiary.otf');
             }
             @font-face {
               font-family: NORMAL;
-              src: url('/fonts/OMORI_GAME2.ttf');
+              src: url('../fonts/OMORI_GAME2.ttf');
             }
             @font-face {
               font-family: FINE;
-              src: url('/fonts/OMORI_GAME.ttf');
+              src: url('../fonts/OMORI_GAME.ttf');
             }
             
 
@@ -80,7 +80,7 @@
               
             .header {
               height: 350px;
-              background: url(/assets/PearliaSystemBG2.png);
+              background: url(../assets/PearliaSystemBG2.png);
               background-size: 100%;
               }
             
@@ -127,7 +127,7 @@
             
             .maincontainer {
               display: flex;
-              background: url('/assets/thepinnacle/stars.gif'); 
+              background: url('../assets/stars.gif'); 
               justify-content: center;
             }
             
