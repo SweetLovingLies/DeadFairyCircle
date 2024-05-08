@@ -1,4 +1,68 @@
+@font-face {
+  font-family: Helena;
+  src: url('../fonts/HelenaDiary.otf');
+}
+@font-face {
+  font-family: NORMAL;
+  src: url('../fonts/OMORI_GAME2.ttf');
+}
+
+@font-face {
+  font-family: FINE;
+  src: url('../fonts/OMORI_GAME.ttf');
+}
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   color: white;
   background-color: black;
+  font-family: 'Times New Roman', Times, serif;
 }
+
+.flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+h1 {
+  font-family: Helena;
+}
+
+/*=====Scrollbar CSS=====*/
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 17px;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 0px;
+  border: 2px solid white;
+  outline: 2px solid black;
+  outline-offset: 0px;
+}
+
+/* ===== Scrollbar CSS end ===== */

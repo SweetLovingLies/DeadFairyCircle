@@ -1,0 +1,48 @@
+main{
+    height: 100vh;
+}
+
+.aboutWrapper{
+    flex: 0 1 800px;
+    gap: 60px;
+    padding: 15px;
+}
+
+#aboutText{
+    flex: 0 1 500px;
+    padding: 5px 15px;
+}
+
+#aboutText h1{
+    margin: 0;
+    border-bottom: 10px solid white;
+}
+
+#aboutText p::before{
+    content: '';
+    display: inline-block;
+    background-image: url('../assets/pixels/whiterose.webp');
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    margin-right: 5px;
+}
+
+#briarRose{
+    width: 200px;
+    height: 500px;
+}
+
+@media (orientation: portrait) {
+    .flex{
+        flex-flow: column nowrap;
+    }
+}
+/* 
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 540px) {}
+
+@media screen and (max-width: 425px) {} */
