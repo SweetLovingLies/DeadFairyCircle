@@ -11,6 +11,7 @@
   font-family: FINE;
   src: url('../fonts/OMORI_GAME.ttf');
 }
+
 html, body{
   margin: 0;
   padding: 0;
@@ -27,13 +28,12 @@ body {
   display: flex;
 }
 
-.justify-content-center {
-  justify-content: center;
+.columnflex{
+  display: flex;
+  flex-flow: column no-wrap;
 }
 
-.align-items-center {
-  align-items: center;
-}
+/* General Styling */
 
 h1,
 h2,

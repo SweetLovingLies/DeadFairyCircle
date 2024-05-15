@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not Found</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-    <h1>Not quite.</h1>
-    <p>Try again!</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No one's around to help</title>
+  <link href="css/not_found.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body class="flex">
+    <div id="wrapper" class="columnflex">
+      <img class="miku" src="assets/miku.gif">
+      <a href="index.html"><p>No one's around to help.</p></a>
+    </div>
+    <div class="miscolored"></div>
+    <div class="scanlines"></div>
+    <div class="lighten-overlay"></div>
+    <div class="glow"></div>
+  </div>
+</body>
+
+<audio autoplay loop id="noHelp">
+  <source src="https://files.catbox.moe/jloa24.mp3" preload="auto" type="audio/mpeg">
+  Your browser does not support the audio element!
+</audio>
+<script>
+  document.getElementById('noHelp').load();
+  noHelp.volume = .9;
+</script>
+
 </html>
