@@ -81,8 +81,6 @@ body {
 
 
 #wrapper {
-    width: 40vw;
-    height: 60vh;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -90,7 +88,7 @@ body {
 
 
 .miku {
-    max-width: 250px;
+    width: 250px;
 }
 
 a {
