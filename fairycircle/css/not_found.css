@@ -95,11 +95,12 @@ a {
     color: white;
     margin: 0;
     font-weight: bold;
-    font-size: 3em;   
+    font-size: 3em;
     text-decoration: none;
+    text-align: center;
 }
 
-a:hover{
+a:hover {
     color: black;
     text-decoration: underline;
 }
@@ -124,10 +125,10 @@ a:hover{
     z-index: 998;
     pointer-events: none;
     background: none;
-  }
-  
-  /* Darker scanlines */
-  .scanlines::before {
+}
+
+/* Darker scanlines */
+.scanlines::before {
     content: "";
     position: absolute;
     top: 0;
@@ -136,10 +137,10 @@ a:hover{
     height: 100%;
     background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 1px, transparent 5px, transparent 2px);
     animation: scroll 5s linear infinite;
-  }
-  
-  /* Lighter scanlines */
-  .scanlines::after {
+}
+
+/* Lighter scanlines */
+.scanlines::after {
     content: "";
     position: absolute;
     top: 0;
@@ -148,9 +149,9 @@ a:hover{
     height: 100%;
     background: repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 5px, transparent 2px);
     animation: scroll 5s linear infinite;
-  }
+}
 
-  .lighten-overlay {
+.lighten-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -160,25 +161,27 @@ a:hover{
     z-index: 9999;
     pointer-events: none;
     animation: scroll-lighten 8s linear infinite;
-  }
-  
-  @keyframes scroll {
+}
+
+@keyframes scroll {
     from {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     to {
-      transform: translateY(50%);
+        transform: translateY(50vh);
     }
-  }
-  
-  @keyframes scroll-lighten {
+}
+
+@keyframes scroll-lighten {
     from {
-      transform: translateY(-100vh);
+        transform: translateY(-100vh);
     }
+
     to {
-      transform: translateY(100vh);
+        transform: translateY(100vh);
     }
-  }
+}
 
 .glow {
     position: absolute;
@@ -191,7 +194,7 @@ a:hover{
     pointer-events: none;
 }
 
-.miscolored{
+.miscolored {
     position: absolute;
     top: 0;
     left: 0;
@@ -204,10 +207,30 @@ a:hover{
     mix-blend-mode: overlay;
 }
 
+/* Chromatic Abberation V1 (WILL FIX LATER)*/
 .miku,
 a {
-  filter: 
-  drop-shadow(2px 2px 0 rgba(255, 0, 0, 0.5)) drop-shadow(-2px -2px 0 rgba(255, 0, 0, 0.5))
-  drop-shadow(2px 2px 0 rgba(0, 255, 0, 0.5)) drop-shadow(-5px -3px 0 rgba(0, 255, 0, 0.5))
-  drop-shadow(2px 2px 0 rgba(0, 0, 255, 0.5)) drop-shadow(-1px -1px 0 rgba(0, 0, 255, 0.5));
+    filter:
+        drop-shadow(2px 2px 0 rgba(255, 0, 0, 0.5)) drop-shadow(-2px -2px 0 rgba(255, 0, 0, 0.5)) drop-shadow(2px 2px 0 rgba(0, 255, 0, 0.5)) drop-shadow(-5px -3px 0 rgba(0, 255, 0, 0.5)) drop-shadow(2px 2px 0 rgba(0, 0, 255, 0.5)) drop-shadow(-1px -1px 0 rgba(0, 0, 255, 0.5));
+}
+
+@media only screen and (max-width: 1024px) {
+    .scanlines::before {
+        background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.144) 1px, transparent 4px, transparent 7px);
+    }
+
+    .scanlines::after {
+        background: repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 4px, transparent 4px);
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+    .scanlines::before {
+        background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.288) 1px, transparent 3px, transparent 6px);
+    }
+
+    .scanlines::after {
+        background: repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 6px);
+    }
 }
