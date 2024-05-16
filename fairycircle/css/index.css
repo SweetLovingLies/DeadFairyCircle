@@ -1,0 +1,11 @@
+
+main{
+    text-align: center;
+}
+
+#pinkspace{
+    color: #ff90e3;
+}
+#pinkspace:hover{
+    color: #ff0080;
+}

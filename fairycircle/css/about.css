@@ -20,7 +20,7 @@ main{
     border-bottom: 10px solid white;
 }
 
-#aboutText p::before{
+.bulleted::before{
     content: '';
     display: inline-block;
     background-image: url('../assets/pixels/whiterose.webp');

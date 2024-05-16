@@ -24,6 +24,17 @@ body {
   font-family: 'Times New Roman', Times, serif;
 }
 
+header{
+  background-color: white;
+  width: 100vw;
+  position: fixed;
+  text-align: right;
+}
+header a{
+  padding-right: 10px;
+  color: black;
+}
+
 .flex {
   display: flex;
 }
@@ -34,6 +45,16 @@ body {
 }
 
 /* General Styling */
+
+a{
+  font-size: large;
+  color: white;
+  transition: all .25s;
+}
+
+a:hover{
+  color: #725081;
+}
 
 h1,
 h2,
