@@ -1,5 +1,4 @@
 main{
-    height: 100vh;
     align-items: center;
     justify-content: center;
 }
@@ -8,6 +7,7 @@ main{
     flex: 0 1 800px;
     gap: 60px;
     padding: 15px;
+    padding-top: 60px;
 }
 
 #aboutText{
@@ -31,7 +31,7 @@ main{
 }
 
 #briarRose{
-    width: 30%;
+    width: 25%;
     height: auto;
 }
 
