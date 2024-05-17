@@ -4,30 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Graveyard</title>
+  <title>Down the rabbit hole...</title>
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
   <link href="css/index.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body>
-  <main>
-    <h1>Welcome to the Graveyard.</h1>
-    <h2> Where would you like to go?</h2>
-    <a href="about.html"><p>About The Writers</p></a> 
-    <a href="blackspace.html"><p>What is the Dead Fairycircle? (unstarted)</p></a> 
-    <a href="writing.html"><p>My Writing (unstarted)</p></a>
-    <a id="pinkspace" href="pinkspace.html"><p>Pink Space (unstarted)</p></a>
-    <p> Please feel free to click the last 3 links to navigate to the not found page, which is the only "interesting" thing here right now.</p>
+  <main class="flex">
+    <aside class="columnflex">
+      <img id="whiterabbit" src="assets/Alice/WhiteRabbitVer.png">
+      <h4>“When you're not on edge, you're taking up too much space.”</h4>
+    </aside>
+    <section class="columnflex">
+      <h1>Down the Rabbit Hole</h1>
+      <a href="graveyard.html" id="rabbithole"><h1>Alice Fell</h1></a>
+    </section>
+    
   </main>
   
-  <audio autoplay loop id="oldDoll">
+  <!-- <audio autoplay loop id="oldDoll">
     <source src="https://files.catbox.moe/4fob2f.mp3" preload="auto" type="audio/mpeg">
     Your browser does not support the audio element!
   </audio>
   <script>
     document.getElementById('oldDoll').load();
     oldDoll.volume = 0.06;
-  </script>
+  </script> -->
 </body>
 
 </html>

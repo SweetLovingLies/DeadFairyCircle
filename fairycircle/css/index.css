@@ -1,11 +1,50 @@
-
-main{
+aside {
+    flex: 1 1 400px;
     text-align: center;
 }
 
-#pinkspace{
-    color: #ff90e3;
+#whiterabbit {
+    display: block;
+    width: 80%;
+    margin: auto;
+    filter: saturate(.2);
+    transition: all 1s;
+    order: 1;
 }
-#pinkspace:hover{
-    color: #ff0080;
+
+#whiterabbit:hover {
+    filter: saturate(1)
+}
+
+aside h4{
+    justify-self:  flex-end;
+    order: 2;
+}
+
+section {
+    flex: 1 1 500px;
+    justify-content: center;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 5em;
+    margin: 0;
+}
+
+#rabbithole:hover {
+    color: red;
+}
+
+
+@media (orientation: portrait) {
+    aside h1{
+        order: 1
+    }
+    #whiterabbit{
+        order: 2
+    }
+    section h4 {
+        font-size: 3em;
+    }
 }

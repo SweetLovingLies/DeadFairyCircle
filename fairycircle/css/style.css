@@ -2,6 +2,7 @@
   font-family: Helena;
   src: url('../fonts/HelenaDiary.otf');
 }
+
 @font-face {
   font-family: NORMAL;
   src: url('../fonts/OMORI_GAME2.ttf');
@@ -12,7 +13,8 @@
   src: url('../fonts/OMORI_GAME.ttf');
 }
 
-html, body{
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -24,13 +26,14 @@ body {
   font-family: 'Times New Roman', Times, serif;
 }
 
-header{
+header {
   background-color: white;
   width: 100vw;
   position: fixed;
   text-align: right;
 }
-header a{
+
+header a {
   padding-right: 10px;
   color: black;
 }
@@ -39,20 +42,20 @@ header a{
   display: flex;
 }
 
-.columnflex{
+.columnflex {
   display: flex;
-  flex-flow: column no-wrap;
+  flex-flow: column nowrap;
 }
 
 /* General Styling */
 
-a{
+a {
   font-size: large;
   color: white;
   transition: all .25s;
 }
 
-a:hover{
+a:hover {
   color: #725081;
 }
 
@@ -87,3 +90,17 @@ h1 {
 }
 
 /* ===== Scrollbar CSS end ===== */
+
+@media (orientation: portrait) {
+  .flex {
+    flex-flow: column nowrap;
+  }
+}
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 540px) {}
+
+@media screen and (max-width: 425px) {}
