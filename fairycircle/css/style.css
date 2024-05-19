@@ -38,6 +38,10 @@ header a {
   color: black;
 }
 
+main{
+  padding: 10px;
+}
+
 .flex {
   display: flex;
 }
